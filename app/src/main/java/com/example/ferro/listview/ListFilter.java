@@ -8,9 +8,10 @@ import java.util.regex.Pattern;
  * Created by Ferrão on 24/09/2016.
  */
 public class ListFilter {
+
     static ArrayList<String> filter(ArrayList<String> list , String digito){
         ArrayList<String> filterList= new ArrayList<String>();
-        String modelo = "[a-zA-Z]{0,}"+digito+"{0,}[a-zA-Z]{0,}";
+        String modelo = "\\.*(?i)"+digito+"\\.*";
         Pattern pattern = Pattern.compile(modelo);
         Matcher matcher;
         for(int x = 0; x < list.size() ; x++){

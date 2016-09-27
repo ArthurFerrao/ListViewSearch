@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements TextWatcher{
         text = (EditText) findViewById(R.id.text);
         text.addTextChangedListener(this);
         listView = (ListView) findViewById(R.id.lista);
-        String[] name = new String[]{"AccM","Bga","asC","nbD"};
+        String[] name = new String[]{"AccM gba","Bga blabla","asC pow","nbD pow"};
         for(int x=0;x<name.length;x++){
             listNames.add(name[x]);
         }
